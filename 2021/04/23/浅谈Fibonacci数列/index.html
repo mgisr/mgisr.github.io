@@ -439,7 +439,7 @@
 <li>兔子永不死去</li>
 </ul>
 </blockquote>
-<p>如果我们假设$F<em>n = a,F</em>{n + 1} = b$，则$F_{n  +2}$的值显然是由两部分组成的，即：</p>
+<p>如果我们假设$F_n = a,F_{n + 1} = b$，则$F_{n  +2}$的值显然是由两部分组成的，即：</p>
 <ul>
 <li>第$n + 1$月留存的兔子数，即$b$。</li>
 <li>第$n + 1$月可以繁衍的兔子生下的兔子数 $ + $ 第$n$月新诞生的兔子生下的兔子数 $=$ $a$。</li>
@@ -564,7 +564,7 @@ vector<span class="token operator">&lt;</span>vector<span class="token operator"
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="一些有趣的性质"><a href="#一些有趣的性质" class="headerlink" title="一些有趣的性质"></a>一些有趣的性质</h2><ul>
-<li><p>$\large \sum<em>{i = 1}^{n}F_i = F</em>{n + 2} - 1$</p>
+<li><p>$\large \sum_{i = 1}^{n}F_i = F_{n + 2} - 1$</p>
 <p><strong>证明</strong>：我们观察下面这个式子：</p>
 <script type="math/tex; mode=display">
 {\large F_{n + 1} = F_n + F_{n - 1}}</script><p>变形得：</p>
@@ -584,7 +584,7 @@ F_n & = & F_{n + 1} & - & F_{n - 1}
 {\large \sum_{i = 1}^{n}F_i = F_{n + 2} - 1}</script><p><strong>证毕</strong>。</p>
 <p>根据这一性质，我们在对<strong>Fibonacci数列</strong>求和时，可以不必对前$n$项累加，而只用求第$n + 2$项即可。</p>
 </li>
-<li><p>$\large F<em>{m + n} = F_m \cdot F</em>{n + 1} + F<em>{m - 1} \cdot F</em>{n}$</p>
+<li><p>$\large F_{m + n} = F_m \cdot F_{n + 1} + F_{m - 1} \cdot F_{n}$</p>
 <p><strong>证明</strong>：当$m = 1, n = 0$时：显然成立。</p>
 <p>假设至第$n$项时，等式成立，则有：</p>
 <script type="math/tex; mode=display">
